@@ -2,7 +2,9 @@
 const themeToggle = document.querySelector('.js-themeToggle')
 const minutesNumber = document.querySelector('.js-minutesNumber')
 const secondsNumber = document.querySelector('.js-secondsNumber')
-const milisecondsNumber = document.querySelector('.js-milisecondsNumber')
+const milisecondsNumber = document.querySelector(
+  '.js-milisecondsNumber'
+)
 const startBtn = document.querySelector('.js-startBtn')
 const stopBtn = document.querySelector('.js-stopBtn')
 const resetBtn = document.querySelector('.js-resetBtn')
@@ -22,7 +24,6 @@ stopBtn.addEventListener('click', stopStopwatch)
 resetBtn.addEventListener('click', resetStopwatch)
 themeToggle.addEventListener('click', toggleDark)
 
-
 // FUNCTIONS
 
 // TOGGLE DARK THEME
@@ -39,15 +40,15 @@ function getYear() {
 function resetStopwatch() {
   clearTimeout(milisecondsTimer)
   timerOn = false
-  
+
   miliseconds = 0
   seconds = 0
   minutes = 0
-  
+
   milisecondsNumber.textContent = addZero(miliseconds)
   secondsNumber.textContent = addZero(seconds)
   minutesNumber.textContent = addZero(minutes)
-  
+
   startBtn.disabled = false
   stopBtn.disabled = true
   resetBtn.disabled = true
@@ -57,18 +58,18 @@ function resetStopwatch() {
 function stopStopwatch() {
   clearTimeout(milisecondsTimer)
   timerOn = false
-  
+
   startBtn.disabled = false
   stopBtn.disabled = true
 }
 
-// Start Stopwatch 
+// Start Stopwatch
 function startStopwatch() {
-  if(!timerOn) {
+  if (!timerOn) {
     timerOn = true
     countUp()
   }
-  
+
   startBtn.disabled = true
   stopBtn.disabled = false
   resetBtn.disabled = false
@@ -81,14 +82,14 @@ function countUp() {
 function milisecondsCount() {
   milisecondsNumber.textContent = addZero(miliseconds)
   miliseconds++
-  milisecondsTimer = setTimeout(countUp, 10);
-  
+  milisecondsTimer = setTimeout(countUp, 10)
+
   if (miliseconds > 99) {
     miliseconds = 0
     seconds++
     secondsNumber.textContent = addZero(seconds)
   }
-  
+
   if (seconds > 59) {
     seconds = 0
     secondsNumber.textContent = addZero(seconds)
