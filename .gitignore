@@ -1,0 +1,3 @@
+# Don't include ".txt" files, except "robots.txt" file.
+*.txt
+!robots.txt
