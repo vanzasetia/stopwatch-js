@@ -9,7 +9,7 @@
 ## Disclaimer
 
 This project is not finished yet, but feel free to take a look at this
-project and give me feedback.
+project and give me feedback. I also find out that on **Mi Browser**, the light theme is looking bad.
 
 ## Feedback and Live Review
 
