@@ -14,8 +14,6 @@ let miliseconds = 0
 let seconds = 0
 let minutes = 0
 let milisecondsTimer
-let secondsTimer
-let minutesTimer
 
 // ADD EVENT LISTENERS
 document.addEventListener('DOMContentLoaded', getYear)
