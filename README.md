@@ -3,7 +3,7 @@
 <p align="left">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/vanzasetia/stopwatch-js?style=for-the-badge">
   <a href="https://twitter.com/vanzasetia" target="_blank"><img src="https://img.shields.io/twitter/follow/vanzasetia?logo=twitter&style=for-the-badge" alt="Twitter followers." /></a>
-  <img alt="Netlify" src="https://img.shields.io/netlify/?style=for-the-badge">
+  <img alt="Netlify" src="https://img.shields.io/netlify/6641f5ac-2285-46ee-b859-659df2ef7610?style=for-the-badge">
 </p>
 
 ## Disclaimer
@@ -13,7 +13,7 @@ project and give me feedback.
 
 ## Feedback and Live Review
 
-- [🌍 Live Review]()
+- [🌍 Live Review](https://vanzastopwatch.netlify.app/)
 - [🐦 Give Feedback on Twitter]()
 
 ## The Story When Doing This Project
