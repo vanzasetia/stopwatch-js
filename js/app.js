@@ -18,13 +18,22 @@ let milisecondsTimer
 // ADD EVENT LISTENERS
 document.addEventListener('DOMContentLoaded', getYear)
 startBtn.addEventListener('click', startStopwatch)
+stopBtn.addEventListener('click', stopStopwatch)
 
 
 // FUNCTIONS
+// Get Current Year
 function getYear() {
   currentYear.textContent = new Date().getFullYear()
 }
 
+// Stop Stopwatch
+function stopStopwatch() {
+  clearTimeout(milisecondsTimer)
+  timerOn = false
+}
+
+// Start Stopwatch 
 function startStopwatch() {
   if(!timerOn) {
     timerOn = true
