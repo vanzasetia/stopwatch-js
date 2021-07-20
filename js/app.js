@@ -19,18 +19,47 @@ let milisecondsTimer
 document.addEventListener('DOMContentLoaded', getYear)
 startBtn.addEventListener('click', startStopwatch)
 stopBtn.addEventListener('click', stopStopwatch)
+resetBtn.addEventListener('click', resetStopwatch)
+themeToggle.addEventListener('click', toggleDark)
 
 
 // FUNCTIONS
+
+// TOGGLE DARK THEME
+function toggleDark() {
+  document.body.classList.toggle('dark')
+}
+
 // Get Current Year
 function getYear() {
   currentYear.textContent = new Date().getFullYear()
+}
+
+// Reset Stopwatch
+function resetStopwatch() {
+  clearTimeout(milisecondsTimer)
+  timerOn = false
+  
+  miliseconds = 0
+  seconds = 0
+  minutes = 0
+  
+  milisecondsNumber.textContent = addZero(miliseconds)
+  secondsNumber.textContent = addZero(seconds)
+  minutesNumber.textContent = addZero(minutes)
+  
+  startBtn.disabled = false
+  stopBtn.disabled = true
+  resetBtn.disabled = true
 }
 
 // Stop Stopwatch
 function stopStopwatch() {
   clearTimeout(milisecondsTimer)
   timerOn = false
+  
+  startBtn.disabled = false
+  stopBtn.disabled = true
 }
 
 // Start Stopwatch 
@@ -39,6 +68,10 @@ function startStopwatch() {
     timerOn = true
     countUp()
   }
+  
+  startBtn.disabled = true
+  stopBtn.disabled = false
+  resetBtn.disabled = false
 }
 
 function countUp() {
