@@ -6,18 +6,24 @@
   <img alt="Netlify" src="https://img.shields.io/netlify/6641f5ac-2285-46ee-b859-659df2ef7610?style=for-the-badge">
 </p>
 
-## About this page
+## About this app
 This is my first JavaScript project that I created by myself. Feel free to take a look and give me any feedback!
+
+## Features of this app
+* User can toggle dark theme
+* User can start the stopwatch
+* User can pause the stopwatch
+* User can reset the stopwatch
 
 ## Feedback and Live Review
 
 - [🌍 Live Review](https://vanzastopwatch.netlify.app/)
-- [🐦 Give Feedback on Twitter]()
+- [🐦 Give Feedback on Twitter](https://twitter.com/vanzasetia/status/1418065347815481348?s=19)
+- [📧 Give Feedback through Gmail](venusbumi2@gmail.com)
 
 ## The Story When Doing This Project
 
-Even though this is a beginner project, in my opinion this is still a
-hard project.
+Even though this is a beginner project, in my opinion this is still a hard project.
 
 I don't understand this JavaScript code inside `milisecondsCount`
 function. How can `setTimeout()` can run multiple times? It works like
