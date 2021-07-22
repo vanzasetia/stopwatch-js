@@ -399,12 +399,15 @@ template {
   /* USE CASES */
   --body-background-color: var(--blue-300);
   --body-color: var(--black-100);
+  --dark-theme-background-color: var(--blue-100);
   --card-background-color: var(--blue-300);
   --box-color: var(--blue-200);
   --light-box-shadow-1: var(--white-300);
   --light-box-shadow-2: var(--white-200);
   --light-box-shadow-3: var(--light-box-shadow-2);
   --light-box-shadow-4: var(--black-200);
+  --dark-box-shadow-1: var(--white-100);
+  --dark-box-shadow-2: var(--black-300);
   --light-box-shadow:
     -0.125rem -0.125rem 0.5rem var(--light-box-shadow-1),
     -0.125rem -0.125rem 0.75rem var(--light-box-shadow-2),
@@ -416,6 +419,14 @@ template {
     inset -0.125rem -0.125rem 0.75rem var(--light-box-shadow-2),
     inset 0.125rem 0.125rem 0.25rem var(--light-box-shadow-3),
     inset 0.125rem 0.125rem 0.5rem var(--light-box-shadow-4)
+    ;
+   --dark-box-shadow:
+      -0.125rem -0.125rem 0.3rem var(--dark-box-shadow-1),
+      0.125rem 0.125rem 0.3rem var(--dark-box-shadow-2)
+    ;
+   --dark-box-shadow-inset:
+      inset -0.125rem -0.125rem 0.3rem var(--dark-box-shadow-1),
+      inset 0.125rem 0.125rem 0.3rem var(--dark-box-shadow-2)
     ;
 }
 
@@ -479,6 +490,10 @@ address {
   white-space: nowrap !important;
 }
 
+.love {
+  color: rgb(255,69,0);
+}
+
 
 
 
@@ -526,7 +541,7 @@ address {
   border-radius: 1em;
   box-shadow: var(--light-box-shadow);
   background-color: transparent;
-  padding: 0.8rem;
+  padding: 1rem;
   color: var(--box-color);
 }
 
@@ -547,7 +562,7 @@ address {
 }
 
 .box--btn:focus-visible {
-  outline: 0.3125rem dashed var(--black-100);
+  outline: 0.3125rem dashed var(--blue-100);
   outline-offset: 0.25rem;
 }
 
@@ -665,4 +680,35 @@ address {
 .footer__social:focus-visible {
   outline: 0.3125rem dashed var(--black-100);
   outline-offset: 0.25rem;
+}
+
+/*------------------------------------*\
+  #DARK-THEME
+\*------------------------------------*/
+.dark {
+  background-color: var(--dark-theme-background-color);
+  color: var(--white-300);
+}
+
+.dark .card {
+  box-shadow: var(--dark-box-shadow);
+  background-color: var(--dark-theme-background-color);
+}
+
+.dark .box {
+  box-shadow: var(--dark-box-shadow);
+}
+
+.dark .box--btn:hover,
+.dark .box--btn:focus,
+.dark .box--btn:active {
+  box-shadow: var(--dark-box-shadow-inset);
+}
+
+.dark .box--btn:disabled {
+  box-shadow: var(--dark-box-shadow-inset);
+}
+
+.dark .icon--filter {
+  filter: invert(1);
 }
