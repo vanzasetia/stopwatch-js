@@ -104,8 +104,7 @@
           class="box box--btn" 
           target="_blank" 
           rel="noopener noreferrer" 
-          aria-label="GitHub repository."
-        >
+          aria-label="GitHub repository." >
           <img 
             src="./images/github.svg"
             alt="" 
@@ -131,6 +130,43 @@
             <span class="box box--time js-milisecondsDOM" aria-label="milliseconds">00</span>
           </li>
         </ul>
+      </section>
+      
+      <section class="stopwatch__controllers">
+        <h2 class="sr-only">Stopwatch controller.</h2>
+        <div class="stopwatch__button-container">
+          <button 
+          class="box box--btn js-startBtn" 
+          type="button" 
+          aria-label="Start." >
+            <img 
+              src="./images/play-icon.svg" alt="" 
+              class="icon icon--filter" 
+              aria-hidden="true"
+            >
+          </button>
+          
+          <button 
+            class="box box--btn js-pauseBtn" 
+            type="button" 
+            aria-label="Pause." 
+            disabled >
+            <img 
+              src="./images/pause-icon.svg" 
+              alt="" 
+              class="icon icon--filter" 
+              aria-hidden="true"
+            >
+          </button>
+          
+          <button 
+            class="box box--btn js-resetBtn" 
+            type="button" 
+            aria-label="Reset." disabled>
+            <img src="./images/reset-icon.svg" alt="" class="icon icon--filter" aria-hidden="true">
+          </button>
+        </div>
+        
       </section>
       
     </div>

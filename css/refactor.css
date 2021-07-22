@@ -38,6 +38,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -47,6 +51,7 @@ body {
   min-height: 100vh;
   color: var(--body-color);
   font-family: 'Lato';
+  font-size: 1rem;
 }
 
 a {
@@ -114,7 +119,7 @@ ul {
 .box--btn:disabled {
   box-shadow: var(--light-box-shadow-inset);
   pointer-events: none;
-  transform: scale(0.9);
+  transform: scale(0.98);
 }
 
 .stopwatch__theme-github {
@@ -132,4 +137,16 @@ ul {
   margin: 0 0.4rem;
   font-size: 1.8rem;
   font-weight: 700;
+}
+
+.stopwatch__button-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@supports not (gap: 2rem) {
+  .stopwatch__button-container > *:not(:last-child) {
+    margin-right: 2rem;
+  }
 }
