@@ -1,0 +1,34 @@
+:root {
+  --blue-100: rgb(19,20,25);
+  --blue-200 : rgb(238, 241, 251); 
+  --white-100: rgba(255, 255, 255, 0.1);
+  --white-200: rgba(255, 255, 255, 0.5);
+  --white-300: rgba(255, 255, 255, 1);
+  --black-100: rgb(17,17,17);
+  --black-200: rgba(0, 0, 0, 0.15);
+  --black-300: rgba(0, 0, 0, 0.8);
+  
+  /* USE CASES */
+  --body-background-color: var(--blue-200);
+  --body-color: var(--black-100);
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--body-background-color);
+  color: var(--body-color);
+  font-family: 'Lato';
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
