@@ -54,12 +54,32 @@ body {
   font-size: 1rem;
 }
 
+p {
+  margin: 0.625rem 0;
+  line-height: 1.6;
+}
+
 a {
   text-decoration: none;
 }
 
 ul {
   list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.icon {
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+}
+
+.icon--email {
+  height: 1.25rem;
+  width: 1.25rem;
 }
 
 .sr-only {
@@ -82,7 +102,7 @@ ul {
   background-color: var(--card-background-color);
   padding: 2rem;
   width: 100%;
-  max-width: 31.25rem;
+  max-width: 25rem;
 }
 
 .box {
@@ -148,5 +168,59 @@ ul {
 @supports not (gap: 2rem) {
   .stopwatch__button-container > *:not(:last-child) {
     margin-right: 2rem;
+  }
+}
+
+.footer {
+  margin-top: 3.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.footer__link {
+  color: var(--blue-200);
+}
+
+.footer__email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-200);
+  margin: 1rem 0;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@supports not (gap: 2rem) {
+  .footer__list > *:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+.footer__link:hover,
+.footer__link:active,
+.footer__link:focus,
+.footer__email:hover,
+.footer__email:active,
+.footer__email:focus {
+  text-decoration: underline;
+}
+
+.footer__link:focus-visible,
+.footer__email:focus-visible,
+.footer__social:focus-visible {
+  outline: 0.3125rem dashed var(--black-100);
+  outline-offset: 0.25rem;
+}
+
+
+@media screen and (min-width: 48em) {
+  .box--time {
+    font-size: 2rem;
   }
 }

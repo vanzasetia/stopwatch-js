@@ -77,13 +77,15 @@
 </head>
 <body dir="ltr">
   <a href="#main" class="sr-only">main content.</a>
-  <main id="main" class="card">
+  <div class="card">
     
-    <header class="sr-only">
+    <main id="main">
+    
+      <header class="sr-only">
       <h1>This is a simple stopwatch that is easy to use with a beautiful interface.</h1>
     </header>
     
-    <div class="stopwatch">
+      <div class="stopwatch">
       
       <div class="stopwatch__theme-github">
         <!-- Theme Toggle Button -->
@@ -171,6 +173,38 @@
       
     </div>
     
-  </main>
+    </main>
+    
+    <footer class="footer" role="contentinfo">
+      
+      <p class="footer__paragraph">
+        Code by <a href="https://github.com/vanzasetia" class="footer__link" target="_blank" rel="noopener noreferrer">Vanza Setia</a> with ❤️ &copy; <span class="js-year">2021</span>
+      </p>
+      
+      <address class="footer__address">
+        <a href="mailto:venusbumi2@gmail.com" class="footer__email email"><img src="./images/email-icon.svg" alt="" class="icon icon--email icon--filter" aria-hidden="true"> venusbumi2@gmail.com</a>
+      </address>
+      
+      <ul class="footer__list">
+        <li class="footer__item">
+          <address class="footer__address">
+            <a href="https://www.twitter.com/vanzasetia" class="footer__social box box--btn" target="_blank" rel="noopener noreferrer" aria-label="Twitter."><img src="./images/twitter.svg" alt="" class="icon" aria-hidden="true"></a>
+          </address>
+        </li>
+        <li class="footer__item">
+          <address class="footer__address">
+            <a href="https://github.com/vanzasetia" class="footer__social box box--btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub."><img src="./images/github.svg" alt="" class="icon icon--filter" aria-hidden="true"></a>
+          </address>
+        </li>
+        <li class="footer__item">
+          <address class="footer__address">
+            <a href="https://www.frontendmentor.io/profile/vanzasetia" class="footer__social box box--btn" target="_blank" rel="noopener noreferrer" aria-label="Frontend Mentor."><img src="./images/frontendmentor-icon.png" alt="" class="icon" aria-hidden="true"></a>
+          </address>
+        </li>
+      </ul>
+      
+    </footer>
+    
+  </div>
 </body>
 </html>
