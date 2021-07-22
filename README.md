@@ -6,10 +6,8 @@
   <img alt="Netlify" src="https://img.shields.io/netlify/6641f5ac-2285-46ee-b859-659df2ef7610?style=for-the-badge">
 </p>
 
-## Disclaimer
-
-This project is not finished yet, but feel free to take a look at this
-project and give me feedback. I also find out that on **Mi Browser**, the light theme is looking bad.
+## About this page
+This is my first JavaScript project that I created by myself. Feel free to take a look and give me any feedback!
 
 ## Feedback and Live Review
 
@@ -28,9 +26,6 @@ function. How can `setTimeout()` can run multiple times? It works like
 ```javascript
 milisecondsTimer = setTimeout(countUp, 10)
 ```
-
-The JavaScript, HTML, and CSS are still messy, so in the next
-`git push`, it should be not that bad.
 
 ## What I Learned
 
