@@ -19,7 +19,7 @@ This is my first JavaScript project that I created by myself. Feel free to take 
 
 - [🌍 Live Review](https://vanzastopwatch.netlify.app/)
 - [🐦 Give Feedback on Twitter](https://twitter.com/vanzasetia/status/1418065347815481348?s=19)
-- [📧 Give Feedback through Gmail](venusbumi2@gmail.com)
+- 📧 Give Feedback through Gmail venusbumi2@gmail.com
 
 ## The Story When Doing This Project
 
