@@ -94,6 +94,12 @@ ul {
   cursor: pointer;
 }
 
+.box--time {
+  letter-spacing: 0.1em;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
 .box--btn:focus-visible {
   outline: 0.3125rem dashed var(--black-100);
   outline-offset: 0.25rem;
@@ -114,4 +120,16 @@ ul {
 .stopwatch__theme-github {
   display: flex;
   justify-content: space-between;
+}
+
+.stopwatch__list {
+  display: flex;
+  justify-content: center;
+  padding: 6rem 0;
+}
+
+.stopwatch__colon {
+  margin: 0 0.4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
